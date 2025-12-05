@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的個人頁面</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container" id="app">
+        <div class="profile-card">
+            <img id="avatar" src="" alt="Avatar" class="avatar">
+            <h1 id="name"></h1>
+            <p id="job" class="job-title"></p>
+            <p id="bio" class="bio-text"></p>
+            
+            <div id="tags-container" class="tags-container"></div>
+            
+            <div id="links-container" class="links-container"></div>
+
+            <p id="footer" class="footer-text"></p>
+        </div>
+    </div>
+
+    <div id="error-message" style="display:none; text-align: center; margin-top: 50px;">
+        <h2>⚠️ 程式碼有錯誤</h2>
+        <p>請檢查 data.js 的逗號與引號！</p>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
